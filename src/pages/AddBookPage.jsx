@@ -53,7 +53,7 @@ const AddBookPage = () => {
     // }
 
     Object.keys(form).forEach((key) => {
-      if (key !== "_id" && key !== "isbn") {
+      if (key !== "_id") {
         formData.append(key, form[key]);
       }
     });

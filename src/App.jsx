@@ -19,6 +19,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { fetchPublicBookAction } from "./features/book/bookAction";
 import { useDispatch } from "react-redux";
+import { autoLoginUser } from "./features/auth/authAction";
 
 const userRole = "admin";
 
@@ -27,6 +28,7 @@ function App() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchPublicBookAction());
+    dispatch(autoLoginUser());
   }, []);
 
   return (
