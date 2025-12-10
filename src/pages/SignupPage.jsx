@@ -48,7 +48,7 @@ const SignupPage = () => {
     try {
       setLoading(true);
 
-      const response = await fetch(`${API_BASE}/api/v1/users`, {
+      const response = await fetch(`${API_BASE}/users`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
