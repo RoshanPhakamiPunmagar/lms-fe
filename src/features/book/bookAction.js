@@ -5,7 +5,7 @@ import {
   fetchAllBookAPI,
   fetchPublicBookAPI,
   updateBookAPI,
-} from "./bookApi";
+} from "./bookAPI.js";
 import { setBooks, setPubBooks } from "./bookSlice";
 
 export const fetchPublicBookAction = () => async (dispatch) => {
